@@ -60,3 +60,40 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+
+
+
+
+
+# User_Management_System
+
+
+## UI
+- [ ] Login Panel
+- [ ] Register Panel
+- [ ] Forget Password Panel
+- [ ] Employees,Cities,Country,... with a #CRUD functionality Panel organized in a table
+ 
+ 
+ ## Auth
+ - [ ] Handle Forget Password with mailtrap
+ - [ ] Remember me By creating Cookie that expires after certain time
+ - [ ] Prevent The user form login in after specific unseccssfull tries
+ - [ ] The Ability to choose Cities And States According to the choosen Country
+ - [ ] CRUD For every Field Represented 
+
+## DATABSES
+- [ ] I already pushed the employees.sql file as my db so by import it inside the platform used for DB , everything works perfectly 
+      
+
+It's Specially for Admins that are integrated explicitly By The System and Have all permissions concerning Employees
+The one who will download it and run it on his/her localhost , will be intrested and satisfied with its functionality 
+accompanied with a several authentication
+
+
+
+
