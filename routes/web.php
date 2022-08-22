@@ -7,7 +7,10 @@ use App\Http\Controllers\Backend\CountryController;
 use App\Http\Controllers\Backend\DepartmentController;
 use App\Http\Controllers\Backend\StateController;
 use App\Http\Controllers\Backend\UserController;
+use App\Http\Controllers\GoogleController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -36,6 +39,14 @@ Route::resource('departments', DepartmentController::class);
 
 
 Route::post('users/{user}/change-password', [ChangePasswordController::class, 'change_password'])->name('users.change.password');
+
+
+
+//Google Api
+Route::prefix('google')->name('google.')->group(function() {
+     Route::get('login',[GoogleController::class,'loginWithGoogle'])->name('login');
+     Route::any('callback',[GoogleController::class,'callbackFromGoogle'])->name('callback');
+});
 
 Route::get('{any}', function () {
     return view('employees.index');
